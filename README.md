@@ -1,6 +1,6 @@
 # Covid19Tracker
 
-This is an Angular project that tracks various informations such as the number of confirmed, recovered, deaths and active Covid-19 cases recorded worldwide.
+This is a simple Angular project that tracks various informations such as the number of confirmed, recovered, deaths and active Covid-19 cases recorded worldwide.
 It fetches the numbers from the github repository https://github.com/CSSEGISandData/COVID-19 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
 
 The app is divided into two parts:
