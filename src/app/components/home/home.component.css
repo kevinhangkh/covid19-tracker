@@ -1,0 +1,34 @@
+.pieChart, .colChart {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 30rem;
+}
+
+.pieChart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    padding: 0px;
+    padding-top: 2rem;
+}
+
+.cases {
+    font-family: Lato;
+}
+
+.selectCase {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.selectCase1 {
+    padding-bottom: 0.4rem;
+}
+
+.row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

@@ -1,0 +1,82 @@
+<div class="ui inverted dimmer" [class.active]='loading'>
+    <div class="ui large text loader">Loading</div>
+</div>
+
+<div class="jumbotron bg-white text-center">
+    <h1 class="display-4">Covid-19 Tracker</h1>
+    <hr class="my-4">
+    <app-dashboard-card
+    [totalConfirmed]="totalConfirmed"
+    [totalDeaths]="totalDeaths"
+    [totalRecovered]="totalRecovered"
+    [totalActive]="totalActive">
+    </app-dashboard-card>
+</div>
+
+
+<hr class="my-4">
+<div class="text-center">
+    <h2 class="cases">Cases by country</h2>
+</div>
+
+<div class="ui form">
+    <div class="inline fields selectCase">
+        <label class="selectCase1" for="fruit">Select Case Type :</label>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" id="c" value="c" #c (click)="updateCharts(c)" name="caseType" checked="" tabindex="0" class="hidden">
+                <label for="c">Confirmed</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" id="d" value="d" #d (click)="updateCharts(d)" name="caseType" tabindex="0" class="hidden">
+                <label for="d">Deaths</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" id="r" value="r" #r (click)="updateCharts(r)" name="caseType" tabindex="0" class="hidden">
+                <label for="r">Recovered</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input type="radio" id="a" value="a" #a (click)="updateCharts(a)" name="caseType" tabindex="0" class="hidden">
+                <label for="a">Active</label>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col">
+            <div id="chart" class="pieChart">
+                <apx-chart
+                [series]="chartOptions.series"
+                [chart]="chartOptions.chart"
+                [labels]="chartOptions.labels"
+                [responsive]="chartOptions.responsive"
+                ></apx-chart>
+            </div>
+        </div>
+        <div class="col">
+            <div id="chart" class="colChart">
+                <apx-chart
+                [series]="chartOptionsCol.series"
+                [chart]="chartOptionsCol.chart"
+                [dataLabels]="chartOptionsCol.dataLabels"
+                [plotOptions]="chartOptionsCol.plotOptions"
+                [yaxis]="chartOptionsCol.yaxis"
+                [xaxis]="chartOptionsCol.xaxis"
+                [stroke]="chartOptionsCol.stroke"
+                [grid]="chartOptionsCol.grid"
+                [fill]="chartOptionsCol.fill"
+                [annotations]="chartOptionsCol.annotations"
+                ></apx-chart>
+            </div>
+        </div>
+    </div>
+    
+    
+    
