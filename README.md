@@ -4,8 +4,8 @@ This is an Angular project that tracks various informations such as the number o
 It fetches the numbers from the github repository https://github.com/CSSEGISandData/COVID-19 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
 
 The app is divided into two parts:
-    * Home tab where the worldwide data is displayed
-    * Country tab where data is displayed country wise
+* Home tab where the worldwide data is displayed
+* Country tab where data is displayed country wise
 
 ## Charts
 
