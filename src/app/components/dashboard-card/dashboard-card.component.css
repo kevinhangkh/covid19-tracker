@@ -34,10 +34,10 @@
 }
 
 hr {
-    width: 70%;
+    width: 50%;
     margin-top: 7px;
     margin-bottom: 7px;
-    border: 1px solid lightgray;
+    border-top: 1px solid lightgray;
     opacity: 0.7;
 }
 
