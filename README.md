@@ -1,7 +1,8 @@
 # Covid19Tracker
 
 This is a simple Angular project that tracks various informations such as the number of confirmed, recovered, deaths and active Covid-19 cases recorded worldwide.
-It fetches the numbers from the github repository https://github.com/CSSEGISandData/COVID-19 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
+It fetches data from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
+https://github.com/CSSEGISandData/COVID-19
 
 The app is divided into two parts:
 * Home tab where the worldwide data is displayed
@@ -9,13 +10,13 @@ The app is divided into two parts:
 
 ## Charts
 
-The charts used in this project are from the open-source JavaScript Chart library called ApexCharts.
+The charts used in this project are from the open-source JavaScript Chart library ApexCharts.
 https://apexcharts.com/
 
-## Deployed demo
+## Demo
 
 This project is deployed on Vercel
-https://covid19-tracker-indol-two.vercel.app/
+https://covid19-tracker-kevinhangkh.vercel.app/
 
 
 ## Misc
