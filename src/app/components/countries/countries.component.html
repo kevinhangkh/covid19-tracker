@@ -3,7 +3,7 @@
 </div>
 
 <div class="jumbotron bg-white text-center">
-    <h1 class="display-4">Covid-19 Tracker Country Wise</h1>
+    <span class="title">Covid-19 Tracker Country Wise</span>
     <hr class="my-4">
     
     <div class="mx-auto">
@@ -24,8 +24,10 @@
     [totalActive]="totalActive">
 </app-dashboard-card>
 
+<hr class="my-4">
+
 <div class="row">
-    <div class="col scrollthis">
+    <div class="scrollthis">
         <table class="ui celled table">
             <thead>
                 <tr>
@@ -44,7 +46,7 @@
         </table>
     </div>
     
-    <div class="col">
+    <div class="chart-container">
         <div id="chart" class="lineChart">
             <apx-chart
             [series]="lineChart.series"

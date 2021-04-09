@@ -1,40 +1,44 @@
 <div class="row">
-    <div class="ui card col p-3 m-3">
-        <div class="ui statistic">
-            <div class="label">
-                <h3>Confirmed</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="title">
+                Confirmed
             </div>
-            <div class="value">
+            <hr>
+            <div class="number">
                 {{ totalConfirmed | number }}
             </div>
         </div>
     </div>
-    <div class="ui card col p-3 m-3">
-        <div class="ui statistic">
-            <div class="label">
-                <h3>Recovered</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="title">
+                Recovered
             </div>
-            <div class="value">
+            <hr>
+            <div class="number">
                 {{ totalRecovered | number }}
             </div>
         </div>
     </div>
-    <div class="ui card col p-3 m-3">
-        <div class="ui statistic">
-            <div class="label">
-                <h3>Deaths</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="title">
+                Deaths
             </div>
-            <div class="value">
+            <hr>
+            <div class="number">
                 {{ totalDeaths | number }}
             </div>
         </div>
     </div>
-    <div class="ui card col p-3 m-3">
-        <div class="ui statistic">
-            <div class="label">
-                <h3>Active</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="title">
+                Active
             </div>
-            <div class="value">
+            <hr>
+            <div class="number">
                 {{ totalActive | number }}
             </div>
         </div>

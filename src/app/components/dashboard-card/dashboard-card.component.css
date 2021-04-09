@@ -1,4 +1,52 @@
 .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    min-width: 20%;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(248, 248, 248);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.number {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+hr {
+    width: 70%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid lightgray;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title, .number{
+        font-size: 20px;
+    }
+
+    .title {
+        font-weight: 600;
+    }
 }

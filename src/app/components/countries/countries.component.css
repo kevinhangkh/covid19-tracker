@@ -1,4 +1,41 @@
+.jumbotron {
+    padding: 0px;
+    padding-top: 6rem;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 27px;
+    }
+
+    .scrollthis {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
 .scrollthis {
     overflow-y: scroll;
     height: 500px;
+    min-width: 300px;
+    width: 500px;
+}
+
+.row {
+    margin-top: 1rem;
+    display: flex;
+    flex: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.chart-container {
+    min-width: 300px;
+    width: 500px;
+    /* max-width: 600px; */
 }
