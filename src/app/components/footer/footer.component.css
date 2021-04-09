@@ -1,0 +1,12 @@
+.footer-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+
+.source {
+    font-size: 16px;
+}

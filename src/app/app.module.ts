@@ -12,6 +12,7 @@ import { DashboardCardComponent } from './components/dashboard-card/dashboard-ca
 // import { ChartsModule } from 'ng2-charts';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 // import { NO_ERRORS_SCHEMA } from '@angular/core';
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     HomeComponent,
     CountriesComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

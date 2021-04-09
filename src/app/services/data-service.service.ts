@@ -10,21 +10,33 @@ import { GlobalDataSummary } from '../models/global-data';
 })
 export class DataServiceService {
 
-  private globalDataUrl = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/12-31-2020.csv';
+  private globalDataUrl = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/';
   private dateWiseDataUrl = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv';
   private local_dateWiseDataUrl = '../assets/time_series_covid19_recovered_global.csv';
 
   constructor(private http: HttpClient) {
     
-   }
+    this.globalDataUrl += this.getYesterdaysDate() + ".csv";
+    console.log(this.globalDataUrl);
+    
+  }
+
+  getYesterdaysDate(): string {
+    var today = new Date();
+    today.setDate(today.getDate() - 1); //yesterday's file because today's likely not to be available yet
+
+    var options: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit' };
+    
+    var date: string = today.toLocaleDateString('en-US', options).replace(/\//g, "-");
+    console.log(date);
+
+    return date;
+  }
    
    getGlobalData() {
     return this.http.get(this.globalDataUrl, {responseType: "text"}).pipe(
       map(
         (result) => {
-
-          //Create an array of objects GlobalDataSummary
-          // let data: GlobalDataSummary[] = [];
 
           //Array of Object key: country; value: GlobalDataSummary
           let raw = {};
