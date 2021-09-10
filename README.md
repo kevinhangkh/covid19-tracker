@@ -11,7 +11,7 @@ The app is divided into two parts:
 ## Demo
 
 This project is deployed on Vercel
-https://covid19-tracker-kevinhangkh.vercel.app/
+https://covid19-tracker-indol-two.vercel.app/
 
 
 ## Misc
