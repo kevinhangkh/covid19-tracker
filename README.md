@@ -8,11 +8,6 @@ The app is divided into two parts:
 * Home tab where the worldwide data is displayed
 * Country tab where data is displayed country wise
 
-## Charts
-
-The charts used in this project are from the open-source JavaScript Chart library ApexCharts.
-https://apexcharts.com/
-
 ## Demo
 
 This project is deployed on Vercel
@@ -25,3 +20,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Bootstrap 4.0.0
 https://getbootstrap.com/
+
+The charts used in this project are from the open-source JavaScript Chart library ApexCharts.
+https://apexcharts.com/
